@@ -28,12 +28,12 @@ From the Wikipedia article on the subject:
 <code> var items = [
   { colors: ["#00FF00", "#FF00FF"] },
   { colors: ["#100000", "#1F00FF"] },
-];
+];</code>
 
 <code> var query = '#FF00FF';
-var k = 10;
+var k = 10;</code>
 
-<code> var res = np.findMostSimilar(query, items, k);
+<code> var res = np.findMostSimilar(query, items, k);</code>
 
 <code> /* res = [
 {
@@ -44,22 +44,22 @@ var k = 10;
 
 2. With nice-color-palettes
 
-<code> const colors = require("nice-color-palettes");
+<code> const colors = require("nice-color-palettes");</code>
 
 <code> var query = '#FF00FF';
 var k = 10;
-var res = np.findMostSimilar(query, items, k);
+var res = np.findMostSimilar(query, items, k);</code>
 
 <code>/* res = [
     {
         { distance: 0, colors: ["#00FF00", "#FF00FF"] }
     }
-] */
+] */</code>
 
 
 ## Limitations
 
-Currently only support full hex colors. You can't use all CSS colors like: 'red' or '0xFFF' or transparency '0xf1f1f1f1'
+Currently only support full hex colors. You can't use all CSS colors like: `'red'` or `'0xFFF'` or transparency `'0xf1f1f1f1'`.
 
 
 ## Author
