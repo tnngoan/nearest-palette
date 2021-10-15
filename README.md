@@ -23,7 +23,7 @@ From the Wikipedia article on the subject:
 
 1. With your own colors
 
-`var np = require('nearest-palette');
+` var np = require('nearest-palette');
 
 var items = [
   { colors: ["#00FF00", "#FF00FF"] },
@@ -39,11 +39,11 @@ var res = np.findMostSimilar(query, items, k);
 {
 { distance: 0, colors: ["#00FF00", "#FF00FF"] }
  }
-] */`
+] */ `
 
 2. With nice-color-palettes
 
-`const colors = require("nice-color-palettes");
+` const colors = require("nice-color-palettes");
 
 var query = '#FF00FF';
 var k = 10;
@@ -54,7 +54,7 @@ var res = np.findMostSimilar(query, items, k);
     {
         { distance: 0, colors: ["#00FF00", "#FF00FF"] }
     }
-] */`
+] */ `
 
 
 ## Limitations
