@@ -23,7 +23,7 @@ From the Wikipedia article on the subject:
 
 1. With your own colors
 
-<code> var np = require('nearest-palette');
+<code> var np = require('nearest-palette'); </code>
 
 <code> var items = [
   { colors: ["#00FF00", "#FF00FF"] },
