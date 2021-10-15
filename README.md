@@ -31,11 +31,10 @@ From the Wikipedia article on the subject:
 ];</code>
 
 <code> var query = '#FF00FF';
-var k = 10;</code>
+var k = 10;
 
-<code> var res = np.findMostSimilar(query, items, k);</code>
-
-<code> /* res = [
+var res = np.findMostSimilar(query, items, k);
+/* res = [
 {
 { distance: 0, colors: ["#00FF00", "#FF00FF"] }
  }
@@ -44,13 +43,11 @@ var k = 10;</code>
 
 2. With nice-color-palettes
 
-<code> const colors = require("nice-color-palettes");</code>
-
-<code> var query = '#FF00FF';
+<code> const colors = require("nice-color-palettes");
+var query = '#FF00FF';
 var k = 10;
-var res = np.findMostSimilar(query, items, k);</code>
-
-<code>/* res = [
+var res = np.findMostSimilar(query, items, k);
+/* res = [
     {
         { distance: 0, colors: ["#00FF00", "#FF00FF"] }
     }
