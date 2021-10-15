@@ -29,8 +29,8 @@ var items = [
   { colors: ["#100000", "#1F00FF"] },
 ]; </code>
 
-<code> var query = '#FF00FF';
-var k = 10; </code>
+<code> var query = '#FF00FF'; </code>
+<code> var k = 10; </code>
 
 <code> var res = np.findMostSimilar(query, items, k); </code>
 
