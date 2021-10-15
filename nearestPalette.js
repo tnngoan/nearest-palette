@@ -1,4 +1,4 @@
-function prettyPalette(hex, colors) {
+function nearestPalette(hex, colors) {
   const distances = closestColor(toRGB(hex), colors);
   const tops = distances.sort(function (a, b) {
     return a.minD - b.minD;
@@ -46,4 +46,4 @@ function closestColor(target, colors) {
   return res;
 }
 
-export default prettyPalette;
+export default nearestPalette;

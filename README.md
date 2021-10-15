@@ -58,6 +58,9 @@ var k = 10; </code>
 ] */
 </code>
 
+## Test
+
+<code> npm run test </code>
 
 ## Limitations
 
