@@ -27,14 +27,14 @@ From the Wikipedia article on the subject:
 var items = [
   { colors: ["#00FF00", "#FF00FF"] },
   { colors: ["#100000", "#1F00FF"] },
-];
+]; </code>
 
-var query = '#FF00FF';
-var k = 10;
+<code> var query = '#FF00FF';
+var k = 10; </code>
 
-var res = np.findMostSimilar(query, items, k);
+<code> var res = np.findMostSimilar(query, items, k); </code>
 
-/* res = [
+<code> /* res = [
 {
 { distance: 0, colors: ["#00FF00", "#FF00FF"] }
  }
@@ -44,14 +44,14 @@ var res = np.findMostSimilar(query, items, k);
 2. With nice-color-palettes
 
 <code>
-const colors = require("nice-color-palettes");
+const colors = require("nice-color-palettes"); </code>
 
-var query = '#FF00FF';
-var k = 10;
+<code> var query = '#FF00FF';
+var k = 10; </code>
 
-var res = np.findMostSimilar(query, items, k);
+<code> var res = np.findMostSimilar(query, items, k); </code>
 
-/* res = [
+<code> /* res = [
     {
         { distance: 0, colors: ["#00FF00", "#FF00FF"] }
     }
