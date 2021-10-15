@@ -1,0 +1,25 @@
+{
+  "name": "nearest-palette",
+  "version": "4.0.0",
+  "description": "A search tool to filter out the closest palettes to a color.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tnngoan/nearest-palette.git"
+  },
+  "main": "nearestPalette.js",
+  "keywords": [
+    "nearest color",
+    "npm",
+    "package",
+    "nearest palette"
+  ],
+  "bugs": {
+    "url": "https://github.com/tnngoan/nearest-palette/issues"
+  },
+  "homepage": "https://github.com/tnngoan/nearest-palette#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nhu Ngoan Tran"
+}
