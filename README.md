@@ -41,7 +41,7 @@ var k = 10; </code>
 ] */
 </code>
 
-2. With nice-color-palettes
+2. With [nice-color-palettes](https://www.npmjs.com/package/nice-color-palettes)
 
 <code>
 const colors = require("nice-color-palettes"); </code>
