@@ -1,9 +1,8 @@
-import nearestPalette from './nearestPalette'
+import nearestPalette from "./nearestPalette";
 
 let colors1 = [target, "#1F0001"];
 let colors2 = ["#2FFFFF", "#2FFFF0"];
 let palettes = [colors1, colors2];
-let paletteDistances = nearestPalette(target, palettes);
 let expectedResult = [
   {
     distance: 0,
@@ -14,5 +13,7 @@ let expectedResult = [
     color: colors2,
   },
 ];
-console.log(expectedResult, paletteDistances);
-console.log(expectedResult === paletteDistances? "PASS TEST" : "FAIL TEST");
+
+test("PASS", () => {
+  expect(nearestPalette(target, palettes).toBe(expectedResult));
+});
