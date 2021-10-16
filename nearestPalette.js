@@ -1,5 +1,5 @@
 // top k sorted array of palettes
-module.exports = function nearestPalette(target, palettes, k) {
+function nearestPalette(target, palettes, k) {
   let nearestPalettes = [];
   palettes.forEach((palette) => {
     let minDistance = Number.MAX_VALUE;
@@ -11,10 +11,10 @@ module.exports = function nearestPalette(target, palettes, k) {
   });
   sort(nearestPalettes);
   return nearestPalettes.slice(0, k);
-};
+}
 
 //top k sorted array of every color in every palette
-module.exports = function nearestColor(target, palettes, k) {
+function nearestColor(target, palettes, k) {
   let nearestColors = [];
   palettes.forEach((palette) => {
     let sortedColors = [];
@@ -27,22 +27,21 @@ module.exports = function nearestColor(target, palettes, k) {
     sort(sortedColors);
     nearestColors.push({ distance: minDistance, colors: sortedColors });
   });
+  console.log(nearestColors.slice(0, k)[1].colors);
   return nearestColors.slice(0, k);
-};
+}
 
 // calculate the distance between 2 colors
-module.exports = function distanceToColor(color1, color2) {
-  console.log("before rgb",color2)
+function distanceToColor(color1, color2) {
   color1 = toRGB(color1);
   color2 = toRGB(color2);
-  console.log("see color2",color2);
   const [r1, g1, b1] = color1;
   const [r2, g2, b2] = color2;
   const drp2 = Math.pow(r1 - r2, 2);
   const dgp2 = Math.pow(g1 - g2, 2);
   const dbp2 = Math.pow(b1 - b2, 2);
   return Math.sqrt(drp2 + dgp2 + dbp2);
-};
+}
 
 function toRGB(hex) {
   const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
@@ -60,3 +59,5 @@ function sort(array) {
     return a.distance - b.distance;
   });
 }
+
+export { nearestPalette, distanceToColor, nearestColor };

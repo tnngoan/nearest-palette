@@ -1,8 +1,10 @@
 const { expect } = require("@jest/globals");
 
-const nearestPalette = require("./nearestPalette");
-const nearestColor = require("./nearestPalette");
-const distanceToColor = require("./nearestPalette");
+import {
+  nearestPalette,
+  nearestColor,
+  distanceToColor,
+} from "./nearestPalette.js";
 
 const target = "#FFFFFF";
 const k = 2;
@@ -30,7 +32,7 @@ test("TEST nearest Palettes", () => {
       palette: ["#69d2e7", "#a7dbd8", "#e0e4cc", "#f38630", "#fa6900"],
     },
   ];
-  expect(res).toBe(er);
+  expect(res).toEqual(expect.arrayContaining(er));
 });
 
 test("TEST Nearest Colors", () => {
@@ -39,16 +41,6 @@ test("TEST Nearest Colors", () => {
     {
       distance: 65.50572494064927,
       colors: [
-        { color: "#FFFFFF", distance: 0 },
-        { color: "#f2e9e1", distance: 39.408120990476064 },
-        { color: "#cbe86b", distance: 158.54652314068574 },
-        { color: "#cbe86b", distance: 158.54652314068574 },
-        { color: "#1c140d", distance: 406.59316275608967 },
-      ],
-    },
-    {
-      distance: 0,
-      colors: [
         { color: "#e0e4cc", distance: 65.50572494064927 },
         { color: "#a7dbd8", distance: 102.76672613253767 },
         { color: "#69d2e7", distance: 158.43295111813072 },
@@ -56,6 +48,16 @@ test("TEST Nearest Colors", () => {
         { color: "#fa6900", distance: 295.8884925102698 },
       ],
     },
+    {
+      distance: 0,
+      colors: [
+        { color: "#FFFFFF", distance: 0 },
+        { color: "#f2e9e1", distance: 39.408120990476064 },
+        { color: "#cbe86b", distance: 158.54652314068574 },
+        { color: "#cbe86b", distance: 158.54652314068574 },
+        { color: "#1c140d", distance: 406.59316275608967 },
+      ],
+    },
   ];
-  expect(res).toBe(er);
+  expect(res).toEqual(er);
 });
