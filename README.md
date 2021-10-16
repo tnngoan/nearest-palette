@@ -37,7 +37,7 @@ var items = [
 
 var res = prettyPalette(query, items, k);
 
-/_
+//_
 res = [
 {
 { distance: 0,
@@ -45,7 +45,7 @@ colors: ["#00FF00", "#FF00FF"]
 }
 }
 ]
-_/
+_//
 
 </code>
 
@@ -63,7 +63,7 @@ var colors = require("nice-color-palettes");
 
 var res = prettyPalette(query, colors, k);
 
-/\*
+//\_
 
 res = [  
  {
@@ -93,7 +93,7 @@ res = [
  }  
  ]
 
-\*/
+\_//
 
 </code>
 
