@@ -1,6 +1,6 @@
 {
   "name": "nearest-palette",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "description": "A search tool to filter out the closest palettes to a color.",
   "main": "nearestPalette.js",
   "scripts": {
