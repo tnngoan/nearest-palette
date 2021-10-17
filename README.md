@@ -2,7 +2,7 @@
 
 A search tool to filter out the closest palettes to a color, try out on [ Vibrant Art](https://vibrant-art-map.netlify.app/)
 
-![example](/home/ngoantran/Desktop/projects/nearest-palette/phto.jpg)
+![example](https://github.com/tnngoan/nearest-palette/blob/main/phto.jpg)
 
 ## Installation
 
