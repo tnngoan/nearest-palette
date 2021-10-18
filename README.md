@@ -16,7 +16,7 @@ npm install nearest-palette [-g|--save]
 
 Big picture: _nearest-palette_ calculates the distance from a color to every color in the given palettes to find the closest ones and return the top k closest palettes.
 
-Given an array of color palettes or import from [_nice-color-palettes_](https://www.npmjs.com/package/nice-color-palettes#:~:text=4%20Versions-,nice-color-palettes,-A%20JSON%20of) and a target color in hex. _nearest-palette_ will return a list of (k) palettes and the its distance to target, every color in these palettes may or may not be sorted in ascending order.
+Given an array of color palettes or import from [_nice-color-palettes_](https://www.npmjs.com/package/nice-color-palettes#:~:text=4%20Versions-,nice-color-palettes,-A%20JSON%20of) and a target color in hex. _nearest-palette_ will return a list of (k) palettes and their distances to target, every color in these palettes may or may not be sorted in ascending order.
 
 From the Wikipedia article on the subject:
 
@@ -40,6 +40,7 @@ var items = [
 var res = prettyPalette(query, items, k);
 
 //_
+ 
 res = [
 {
 { distance: 0,
@@ -47,6 +48,7 @@ colors: ["#00FF00", "#FF00FF"]
 }
 }
 ]
+ 
 _//
 
 </code>
