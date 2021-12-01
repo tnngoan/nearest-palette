@@ -1,7 +1,7 @@
 {
   "name": "nearest-palette",
-  "version": "5.0.3",
-  "description": "A search tool to filter out the closest palettes to a color.",
+  "version": "6.0.0",
+  "description": "A search tool to search color palettes by color.",
   "main": "nearestPalette.js",
   "scripts": {
     "test": "jest"
@@ -38,6 +38,7 @@
   "dependencies": {
     "@babel/core": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
-    "babel-jest": "^27.2.5"
+    "babel-jest": "^27.2.5",
+    "nice-color-palettes": "^3.0.0"
   }
 }

@@ -77,4 +77,6 @@ function sort(array) {
   });
 }
 
+
+
 export { nearestPalette, distanceToColor, nearestColor };

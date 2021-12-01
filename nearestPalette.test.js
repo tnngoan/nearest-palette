@@ -14,6 +14,15 @@ const palettes = [
   ["#fe4365", "#fc9d9a", "#f9cdad", "#c8c8a9", "#83af9b"],
 ];
 
+import nearestPalettes from "./nearestPalette";
+var colors = require("nice-color-palettes/1000");
+
+test("Check max palettes", () => {
+  const getPalettes = nearestPalettes("#ffddff", colors, 40);
+  const res = getPalettes.length;
+  expect(res).toBe(40);
+});
+
 test("TEST Distance", () => {
   const res = distanceToColor(target, "#f2e9e1");
   const er = 39.408120990476064;

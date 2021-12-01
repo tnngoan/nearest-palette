@@ -2,7 +2,7 @@
 
 A search tool to search color palettes by color, try out on [ Vibrant Art](https://vibrant-art-map.netlify.app/)
 
-![example](https://github.com/tnngoan/nearest-palette/blob/main/photo.jpg)
+![example](https://github.com/tnngoan/nearest-palette/blob/main/photo.png)
 
 ## Installation
 
