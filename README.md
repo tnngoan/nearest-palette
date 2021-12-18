@@ -1,6 +1,6 @@
 # @ngoantr/nearest-palette
 
-A search tool to filter out the closest palettes to a color, try out on  [ Vibrant Art](https://vibrant-art-map.netlify.app/)
+A search tool to filter out the closest palettes to a color, try out on [ Vibrant Art](https://vibrant-art-map.netlify.app/)
 
 ## Installation
 
@@ -17,60 +17,72 @@ nearest-palette calculates the distance from query color to every color in the g
 From the Wikipedia article on the subject:
 
 > The simplest solution to the NNS problem is to compute the distance from the query point to every other point in the database, keeping track of the "best so far". This algorithm, sometimes referred to as the naive approach, has a running time of O(Nd) where N is the cardinality of S and d is the dimensionality of M. There are no search data structures to maintain, so linear search has no space complexity beyond the storage of the database. Naive search can, on average, outperform space partitioning approaches on higher dimensional spaces.
-> 
 
 ## How to use it?
 
 1. With your own colors
 
-<code>
+```javascript
 var items = [
   { colors: ["#00FF00", "#FF00FF"] },
   { colors: ["#100000", "#1F00FF"] },
-]; </code>
+];
 
-<code> var query = '#FF00FF'; </code>
-<code> var k = 10; </code>
+var query = "#FF00FF";
+var k = 2;
 
-<code> var res = np.findMostSimilar(query, items, k); </code>
+var res = np.findMostSimilar(query, items, k);
 
-<code> /* res = [
-{
-{ distance: 0, colors: ["#00FF00", "#FF00FF"] }
- }
-] */
-</code>
+/* 
+ res = [
+  {
+    colors: ["#00FF00", "#FF00FF"],
+    distance: 0,
+  },
+  {
+    colors: ["#100000", "#1F00FF"],
+    distance: 0.5,
+  }];
+*/
+```
 
 2. With [nice-color-palettes](https://www.npmjs.com/package/nice-color-palettes)
 
-<code>
-const colors = require("nice-color-palettes"); </code>
+```javascript
+const colors = require("nice-color-palettes");
 
-<code> var query = '#FF00FF';
-var k = 10; </code>
+var query = "#FF00FF";
+var k = 2;
 
-<code> var res = np.findMostSimilar(query, items, k); </code>
+var res = np.findMostSimilar(query, items, k);
 
-<code> /* res = [
-    {
-        { distance: 0, colors: ["#00FF00", "#FF00FF"] }
-    }
-] */
-</code>
+/*
+ res = [
+  {
+    colors: ["#00FF00", "#FF00FF"],
+    distance: 0,
+  },
+  {
+    colors: ["#100000", "#1F00FF"],
+    distance: 0.5,
+  }];
+*/
+```
 
 ## Test
 
-<code> npm run test </code>
+```
+$ npm run test
+```
 
 ## Limitations
 
 Currently only support full hex colors. You can't use all CSS colors like: `'red'` or `'0xFFF'` or transparency `'0xf1f1f1f1'`.
 
-
 ## Author
 
-* [Gmail](mailto:ngoan.n.tr@gmail.com)
+- [Gmail](mailto:ngoan.n.tr@gmail.com)
 
-* [Github](https://github.com/tnngoan)
+- [Github](https://github.com/tnngoan)
 
-* [LinkedIn](https://www.linkedin.com/in/tnngoan/)
+- [LinkedIn](https://www.linkedin.com/in/tnngoan/)
