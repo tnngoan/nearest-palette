@@ -22,11 +22,11 @@ From the Wikipedia article on the subject:
 
 > The simplest solution to the NNS problem is to compute the distance from the query point to every other point in the database, keeping track of the "best so far". This algorithm, sometimes referred to as the naive approach, has a running time of O(Nd) where N is the cardinality of S and d is the dimensionality of M. There are no search data structures to maintain, so linear search has no space complexity beyond the storage of the database. Naive search can, on average, outperform space partitioning approaches on higher dimensional spaces.
 
-## How to use it?
+## Quick start:
 
 1. With your own colors
 
-<code>
+```javascript
 
 import prettyPalette from "nearest-palette";
 
@@ -39,7 +39,7 @@ var items = [
 
 var res = prettyPalette(query, items, k);
 
-//_
+/*
  
 res = [
 {
@@ -49,13 +49,13 @@ colors: ["#00FF00", "#FF00FF"]
 }
 ]
  
-_//
+*/
 
-</code>
+```
 
 2. With [nice-color-palettes](https://www.npmjs.com/package/nice-color-palettes)
 
-<code>
+```javascript
 
 // get top k sorted array of every color in every palette
 
@@ -67,7 +67,7 @@ var colors = require("nice-color-palettes");
 
 var res = prettyPalette(query, colors, k);
 
-//\_
+/*
 
 res = [  
  {
@@ -97,13 +97,15 @@ res = [
  }  
  ]
 
-\_//
+*/
 
-</code>
+```
 
 ## Test
 
-<code> npm run test </code>
+```
+$ npm run test 
+```
 
 ## Limitations
 
