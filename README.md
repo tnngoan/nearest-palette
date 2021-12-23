@@ -12,7 +12,7 @@ Install with npm as a local dependency (for API) or global (for CLI).
 npm install nearest-palette [-g|--save]
 ```
 
-## How this work?
+## How does this work?
 
 Big picture: _nearest-palette_ calculates the distance from a color to every color in the given palettes to find the closest ones and return the top k closest palettes.
 
