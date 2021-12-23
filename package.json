@@ -33,9 +33,7 @@
   },
   "homepage": "https://github.com/tnngoan/nearest-palette#readme",
   "devDependencies": {
-    "jest": "^27.2.5"
-  },
-  "dependencies": {
+    "jest": "^27.2.5",
     "@babel/core": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
     "babel-jest": "^27.2.5",
