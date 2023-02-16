@@ -141,7 +141,9 @@ $ npm run test
 
 ## Limitations
 
-Currently only support full hex colors. You can't use all CSS colors like: `'red'` or `'0xFFF'` or transparency `'0xf1f1f1f1'`.
+- Currently only support full hex colors. You can't use all CSS colors like: `'red'` or `'0xFFF'` or transparency `'0xf1f1f1f1'`.
+
+- This algorithm was written based on Euclidean distance - the distance between 2 colors in orthogonal three-dimensional space. Which means fundamentally, it does not model the way in which we (humans) perceive color.
 
 ## Author
 
